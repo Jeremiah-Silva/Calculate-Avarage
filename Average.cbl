@@ -69,7 +69,7 @@
            PERFORM CALCULATE-AVERAGE
            PERFORM QUESTION
            ELSE IF OPTION = "N"
-           DISPLAY "Thank you for using our app. Goodbye!"
+           DISPLAY "Thank you for using my app. Goodbye!"
            ELSE
            DISPLAY "Invalid option. Please enter Y or N."
            PERFORM QUESTION
