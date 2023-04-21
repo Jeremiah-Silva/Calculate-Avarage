@@ -32,19 +32,19 @@
            DISPLAY "Invalid input for the first grade."
            GO TO CALCULATE-AVERAGE.
 
-           DISPLAY "Enter the second grade:".
+           DISPLAY "Enter the second grade: ".
            ACCEPT SCORE2.
            IF SCORE2 <= 0
            DISPLAY "Invalid input for the second grade."
            GO TO CALCULATE-AVERAGE.
 
-           DISPLAY "Enter the third grade:".
+           DISPLAY "Enter the third grade: ".
            ACCEPT SCORE3.
            IF SCORE3 <= 0
            DISPLAY "Invalid input for the third grade."
            GO TO CALCULATE-AVERAGE.
 
-           DISPLAY "Enter the fourth grade:".
+           DISPLAY "Enter the fourth grade: ".
            ACCEPT SCORE4.
            IF SCORE4 <= 0
            DISPLAY "Invalid input for the fourth grade."
@@ -53,13 +53,13 @@
            COMPUTE AVERAGE = (SCORE1 + SCORE2 + SCORE3 + SCORE4) / 4.
 
            IF AVERAGE >= 7
-           DISPLAY "The student ",
-                             STUDENT-NAME, " was approved in ",
-                             SUBJECT," with an average of ",    AVERAGE.
-           IF AVERAGE <= 7
-           DISPLAY "The student ",
-                             STUDENT-NAME, " was approved in ",
-                             SUBJECT, " with an average of ",   AVERAGE.
+           DISPLAY "The student ",    STUDENT-NAME, " was approved in ",
+                                      SUBJECT," with an average of ",   
+                                      AVERAGE.
+           IF AVERAGE < 7
+           DISPLAY "The student ",    STUDENT-NAME, " was reproved in ",
+                                      SUBJECT, " with an average of ",  
+                                      AVERAGE.
 
        QUESTION.
            DISPLAY "Would you like to continue (Y/N)"
