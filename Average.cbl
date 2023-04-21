@@ -1,3 +1,11 @@
+      ****************************************************************** 
+      * Author: Jeremiah
+      * Date: 20/04/2023
+      * Purpose: "Create a school report card that calculates the 
+      *           grade point average and displays the result, 
+      *           indicating whether the student passed or failed."
+      * Tectonics: cobc
+      ******************************************************************
        IDENTIFICATION DIVISION.
        PROGRAM-ID. AVERAGE.
 
@@ -5,11 +13,11 @@
        WORKING-STORAGE SECTION.
        01 STUDENT-NAME PIC X(50).
        01 SUBJECT PIC X(50).
-       01 SCORE1 PIC 999.
-       01 SCORE2 PIC 999.
-       01 SCORE3 PIC 999.
-       01 SCORE4 PIC 999.
-       01 AVERAGE PIC 999.
+       01 SCORE1 PIC 9(1)V9(2).
+       01 SCORE2 PIC 9(1)V9(2).
+       01 SCORE3 PIC 9(1)V9(2).
+       01 SCORE4 PIC 9(1)V9(2).
+       01 AVERAGE PIC 9(1)V9(2).
        01 OPTION PIC X.
 
        PROCEDURE DIVISION.
