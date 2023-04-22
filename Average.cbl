@@ -23,44 +23,51 @@
 
        PROCEDURE DIVISION.
        WELCOME.
-           DISPLAY "Welcome to my app.".
-
+           DISPLAY "     ".
+           DISPLAY "WELCOME TO JEREMIAH COLLEGE'S APP.".
+           DISPLAY "     ".
        SNAME.
-           DISPLAY "Enter the student's name:".
+           DISPLAY "ENTER THE STUDENT'S NAME:".
            ACCEPT STUDENT-NAME.
+           DISPLAY "     ".
 
        SUBJECT-NAME.
-           DISPLAY "Enter the course subject: ".
+           DISPLAY "ENTER THE COURSE SUBJECT:".
            ACCEPT SUBJECT.
-
+           DISPLAY "     ".
+           
            PERFORM CALCULATE-AVERAGE
 
            PERFORM QUESTION
            STOP RUN.
 
        CALCULATE-AVERAGE.
-           DISPLAY "Enter the first grade: ".
+           DISPLAY "ENTER THE FIRST GRADE: ".
            ACCEPT SCORE1.
+           DISPLAY "     "
            IF SCORE1 <= 0
-           DISPLAY "Invalid input for the first grade."
+           DISPLAY "INVALID INPUT FOR THE FIRST GRADE."
            GO TO CALCULATE-AVERAGE.
 
-           DISPLAY "Enter the second grade: ".
+           DISPLAY "ENTER THE SECOND GRADE: ".
            ACCEPT SCORE2.
+           DISPLAY "     "
            IF SCORE2 <= 0
-           DISPLAY "Invalid input for the second grade."
+           DISPLAY "INVALID INPUT FOR THE SECOND GRADE."
            GO TO CALCULATE-AVERAGE.
 
-           DISPLAY "Enter the third grade: ".
+           DISPLAY "ENTER THE THIRD GRADE: ".
            ACCEPT SCORE3.
+           DISPLAY "     "
            IF SCORE3 <= 0
-           DISPLAY "Invalid input for the third grade."
+           DISPLAY "INVALID INPUT FOR THE THIRD GRADE."
            GO TO CALCULATE-AVERAGE.
 
-           DISPLAY "Enter the fourth grade: ".
+           DISPLAY "ENTER THE FOURTH GRADE: ".
            ACCEPT SCORE4.
+           DISPLAY "     "
            IF SCORE4 <= 0
-           DISPLAY "Invalid input for the fourth grade."
+           DISPLAY "INVALID INPUT FOR THE FOURTH GRADE."
            GO TO CALCULATE-AVERAGE.
 
            COMPUTE AVERAGE = (SCORE1 + SCORE2 + SCORE3 + SCORE4) / 4.
@@ -71,22 +78,25 @@
            MOVE "FAILL" TO RESULT
            END-IF
 
-           DISPLAY "Student: ", STUDENT-NAME
-           DISPLAY "Subject: ", SUBJECT
-           DISPLAY "Average: ", AVERAGE
-           DISPLAY "Status: ", RESULT.
+           DISPLAY "STUDENT: ", STUDENT-NAME
+           DISPLAY "SUBJECT: ", SUBJECT
+           DISPLAY "AVERAGE: ", AVERAGE
+           DISPLAY "STATUS: ", RESULT.
 
        QUESTION.
-           DISPLAY "Would you like to continue (Y/N)"
+           DISPLAY "     "
+           DISPLAY "WOULD YOU LIKE TO CONTINUE? (Y/N)"
            ACCEPT OPTION.
-           IF OPTION = "Y"
-           DISPLAY "Let's Go again!"
+           IF OPTION = "Y" OR "y"
+           DISPLAY "     "
+           DISPLAY "START A NEW SEARCH!"
+           DISPLAY "     "
            PERFORM SUBJECT-NAME
            PERFORM QUESTION
-           ELSE IF OPTION = "N"
-           DISPLAY "Thank you for using my app. Goodbye!"
+           ELSE IF OPTION = "N" OR "n"
+           DISPLAY "THANK YOU FOR USING THE JEREMIAH COLLEGE'S APP." 
            ELSE
-           DISPLAY "Invalid option. Please enter Y or N."
+           DISPLAY "INVALID OPTION. PLEASE ENTER Y OR N."
            PERFORM QUESTION
            END-IF.
        END PROGRAM AVERAGE.
