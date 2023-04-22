@@ -77,7 +77,7 @@
            IF AVERAGE >= 7
            MOVE "PASSED"           TO RESULT
            ELSE
-           MOVE "FAILL"            TO RESULT
+           MOVE "FAILED"            TO RESULT
            END-IF
            DISPLAY "*************** RESULT PROCESSING ****************",
            DISPLAY "     "
