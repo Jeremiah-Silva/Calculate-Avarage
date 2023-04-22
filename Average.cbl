@@ -75,7 +75,7 @@
            COMPUTE AVERAGE = (SCORE1 + SCORE2 + SCORE3 + SCORE4) / 4.
 
            IF AVERAGE >= 7
-           MOVE "PASSED"           TO RESULT
+           MOVE "PASSED"            TO RESULT
            ELSE
            MOVE "FAILED"            TO RESULT
            END-IF
