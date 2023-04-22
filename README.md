@@ -10,4 +10,5 @@ The application appropriately handles any calculation errors that may occur. It 
 COBOL is the programming language chosen to implement this project due to its ability to handle large amounts of data and its widespread use in financial and governmental systems. COBOL is a procedural language that follows a specific sequence of instructions to perform one task at a time. The Jeremiah College School Report Card provides a simple and effective solution for users to quickly obtain their students' approval status.
 
 #
-![JEREMIAH'S APP](https://user-images.githubusercontent.com/108309798/233764585-faf51afc-9479-4fd5-b44f-2d640ef3ccff.png)
+![Jeremiah's App](https://user-images.githubusercontent.com/108309798/233797318-2ec4ac52-32b6-4c02-b876-06589c79f6d9.jpg)
+
