@@ -1,5 +1,5 @@
 # Calculate-Avarage
-
+# <a href="" target="_blank"><img src="https://img.shields.io/badge/COBOL-0A2B3D.svg?style=for-the-badge&logo=none" target="_blank"></a>
 
 This project implements the Jeremiah College School Report Card, a simple application that allows users to enter four grades and obtain the student's approval status. The application verifies if the grades entered are valid and greater than 1 before proceeding to calculate the average.
 
@@ -8,3 +8,5 @@ Next, the application calculates the arithmetic mean of the entered grades and c
 The application appropriately handles any calculation errors that may occur. It also asks the user if they want to enter a new set of grades and then repeats the process or thanks the user and terminates.
 
 COBOL is the programming language chosen to implement this project due to its ability to handle large amounts of data and its widespread use in financial and governmental systems. COBOL is a procedural language that follows a specific sequence of instructions to perform one task at a time. The Jeremiah College School Report Card provides a simple and effective solution for users to quickly obtain their students' approval status.
+
+#![JEREMIAH'S APP](https://user-images.githubusercontent.com/108309798/233764585-faf51afc-9479-4fd5-b44f-2d640ef3ccff.png)
