@@ -103,9 +103,7 @@
            ELSE IF OPTION = "N" OR "n"
            DISPLAY "     "
            DISPLAY "**************************************************",
-           DISPLAY "     "
            DISPLAY "THANK YOU FOR USING THE JEREMIAH COLLEGE'S APP."
-           DISPLAY "     "
            DISPLAY "**************************************************",
            DISPLAY "     "
            ELSE
